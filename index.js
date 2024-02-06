@@ -3,6 +3,7 @@ import logger from 'redux-logger';
 import axios from 'axios';
 import {thunk} from 'redux-thunk';
 
+//acion name constants
 const init = 'init'
 const increment = 'increment'
 const decrement = 'decrement'
@@ -15,7 +16,6 @@ const store = createStore(combineReducers({
     bonus: bonusReducer,
 }), applyMiddleware(logger.default, thunk)); /*gloabl store*/ 
 
-//acion name constants
 
 
 
